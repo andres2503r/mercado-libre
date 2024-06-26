@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@database/*": [
+        "./src/data/database-config/typeorm/*"
+      ],
+      "@entity/*": [
+        "./src/data/entities/*"
+      ],
+      "@middlewares/*": [
+        "./src/data/middlewares/*"
+      ],
+      "@components/*": [
+        "./src/shared/components/*"
+      ],
+      "@interfaces/*": [
+        "./src/data/interfaces/*"
+      ],
+      "@tools/*": [
+        "./src/shared/tools/*"
+      ],
+      "@model/*": [
+        "./src/core/model/*"
+      ],
+      "@context/*": [
+        "./src/core/context/*"
+      ],
+      "@hooks/*": [
+        "./src/core/hooks/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
